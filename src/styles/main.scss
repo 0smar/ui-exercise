@@ -1,0 +1,55 @@
+// FONTS 
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600&family=Roboto:wght@300&display=swap');
+
+// VARIABLES
+:root{
+  --sidebar-size: 250px;
+  --header-height: 64px;
+}
+
+// IMPORTS
+@import "components/header.scss";
+@import "components/buttons.scss";
+@import "components/sidebar.scss";
+@import "components/tagbar.scss";
+@import "components/mail-list.scss";
+
+// GENERAL STYLES
+
+*{
+  box-sizing: border-box;
+}
+
+html, body{
+  margin: 0;
+}
+
+body{
+  font-family: 'Roboto';
+}
+
+.main-layout{
+  width: 100%;
+  min-height: calc(100vh - var(--header-height));
+  display: flex;
+  justify-content: flex-start;
+  .sidebar{
+    width: var(--sidebar-size);
+  }
+  .mail-list{
+    width: 100%;
+    display: flex;
+    flex: 1;
+  }
+}
+
+.tag{
+  background-color: #d5f0dc;
+  color: #34a853;
+  padding: 5px 1rem;
+  border-radius: 40px;
+  cursor: pointer;
+  &:hover{
+    background-color: #b7e4c4;
+  }
+}

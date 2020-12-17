@@ -1,0 +1,39 @@
+.mail-list{
+  width: 100%;
+  table{
+    width: 100%;
+    thead{
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      height: 50px;
+      padding: 0 1rem;
+      text-align: right;
+      font-size: 12px;
+    }
+    tbody{
+      tr{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 5px;
+        border: 1px solid rgba(0,0,0,0.075);
+        background-color: rgba(242,245,245,0.8);
+        font-size: 16px;
+        td{
+          border-collapse: collapse;
+        }
+        .subject{
+          font-family: 'Manrope';
+          min-width: 200px;
+        }
+        .sender{
+          min-width: 250px;
+        }
+        .date{
+          margin-left: auto;
+        }
+      }
+    }
+  }
+}

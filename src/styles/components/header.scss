@@ -1,0 +1,51 @@
+.header{
+  width: 100%;
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 0;
+  border-bottom: 1px solid rgba(0,0,0,0.075);
+  .logo{
+    font-family: 'Manrope';
+    width: var(--sidebar-size);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 1rem;
+  }
+  .search-bar{
+    display: flex;
+    flex: 1;
+    input{
+      background-color: #f1f3f4 ;
+      padding: 14px;
+      font-family: 'Manrope';
+      border: none;
+      border-radius: 6px;
+      width: 100%;
+      max-width: 70%;
+      font-size: 16px;
+      outline-color: #e4e4e4;
+    }
+  }
+  .user-controls{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 1rem;
+    .avatar{
+      width: 40px;
+      height: 40px;
+      background-color: rgb(28, 171, 215);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Manrope';
+      color: #fff;
+      margin-left: 1rem;
+      font-size: 14px;
+    }
+  }
+}

@@ -13,6 +13,9 @@
     align-items: center;
     justify-content: flex-start;
     padding: 0 1rem;
+    img{
+      width: 45%;
+    }
   }
   .search-bar{
     display: flex;
@@ -34,6 +37,11 @@
     align-items: center;
     justify-content: flex-end;
     padding: 0 1rem;
+    .button{
+      img{
+        opacity: 0.4;
+      }
+    }
     .avatar{
       width: 40px;
       height: 40px;

@@ -60,3 +60,19 @@
     }
   }
 }
+
+@media only screen and (max-width: 768px){
+  .mail-list{
+    table{
+      thead{
+        tr{
+          flex-direction: row-reverse;
+          justify-content: flex-end;
+          .email-count{
+            margin-left: 0;
+          }
+        }
+      }
+    }
+  }
+}

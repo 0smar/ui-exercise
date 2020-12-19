@@ -60,30 +60,6 @@ function MailList({ emails, columns, data, handleDeleteEmails }) {
     }
   )
 
-  function formatDate(date) {
-    let mm = date.getMonth()+1 < 10 ? `0${date.getMonth()+1}`: date.getMonth()+1;
-    let dd = date.getDate()+1 < 10 ? `0${date.getDate()+1}`: date.getDate()+1;;
-    let yyyy = date.getFullYear();
-    let hours = date.getHours() < 10 ? `0${date.getHours()}`: date.getHours();
-    let minutes = date.getMinutes();
-    return `${mm}/${dd}/${yyyy}  ${hours}:${minutes}`;
-  }
-
-  const renderEmails = (emails) => (
-    emails.map(email => (
-      <tr key={email.id}>
-        <td className="subject">{email.subject}</td>
-        <td className="sender">{email.sender}</td>
-        <td className="tags">
-          {email.tags.map(tag => (
-            <div className="tag" key={tag}>{tag}</div>
-          ))}
-        </td>
-        <td className="date">{formatDate(new Date(email.date))}</td>
-      </tr>
-    ))
-  )
-
   return(
     <div className="mail-list">
       <table {...getTableProps()}>
